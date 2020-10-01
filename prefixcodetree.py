@@ -39,11 +39,11 @@ class PrefixCodeTree:
             if node.val != 0:
                     result += node.val
                     node = self.root
-        print(result)
+        # print(result)
         return result
 
-    def pr(self):
-        print(self.root.right.right.val)
+    # def pr(self):
+    #     print(self.root.right.right.val)
 
 # codebook = {
 #     'x1' : [0],
