@@ -28,7 +28,7 @@ class PrefixCodeTree:
                     # node.val = symbol
         node.val = symbol
     def decode(self, encodeData, datalen):
-        dataAsBit = ''.join(format(ord(byte), '08b') for byte in encodeData)
+        dataAsBit = ''.join(format(byte, '08b') for byte in encodeData)
         node = self.root
         result = ''
         for index in range(0,datalen):
